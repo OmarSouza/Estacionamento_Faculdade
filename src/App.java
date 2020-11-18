@@ -57,7 +57,7 @@ public class App {
                                 System.out.println("Informar placa: ");
                                 String placa_Saida = scanner.next();
 
-                                lEstacionamento.remove(placa_Saida);
+                                lEstacionamento.remove();
                             break;
                             case 4:
                                 System.out.println("Retornando ao Menu Principal");
@@ -89,3 +89,6 @@ public class App {
         }
     }
 }
+
+
+//Teste pro guilherme se acostumar com o git
