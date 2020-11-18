@@ -33,14 +33,15 @@ public class App {
 
                                 System.out.println("Vaga Ocupada: ");
                                 int vaga_ocupada = scanner.nextInt();
+                                System.out.println("Insira os dados da Entrada:");
                                 System.out.println("Motorista:");
-                                String motorista_Veiculo = scanner.nextLine();
+                                String motorista = scanner.next();
                                 System.out.println("Placa: ");
-                                String placa_Veiculo = scanner.nextLine();
+                                String placa_Veiculo = scanner.next();
                                 System.out.println("Entrada:");
-                                String entrada_Veiculo = scanner.nextLine();
+                                String entrada_Veiculo = scanner.next();
 
-                                lEstacionamento.add(new Estacionamento(vaga_ocupada, placa_Veiculo, motorista_Veiculo, entrada_Veiculo));
+                                lEstacionamento.add(new Estacionamento(vaga_ocupada, placa_Veiculo, motorista, entrada_Veiculo));
 
                                 retorno_Estacionamento = 1;
                             break;
@@ -53,7 +54,10 @@ public class App {
                                 retorno_Estacionamento = 1;
                             break;
                             case 3:
+                                System.out.println("Informar placa: ");
+                                String placa_Saida = scanner.next();
 
+                                lEstacionamento.remove(placa_Saida);
                             break;
                             case 4:
                                 System.out.println("Retornando ao Menu Principal");
