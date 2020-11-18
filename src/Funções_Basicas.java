@@ -12,4 +12,9 @@ public class Funções_Basicas {
         System.out.println("3 - Saida de Veiculos.");
         System.out.println("4 - Sair do Menu.");
     }
+
+    public void menuFuncionarios(){
+        System.out.println("Menu de Rotatividae de Funcionarios: ");
+        System.out.println("");
+    }
 }
