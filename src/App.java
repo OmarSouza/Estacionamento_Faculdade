@@ -90,5 +90,4 @@ public class App {
     }
 }
 
-
-//Teste pro guilherme se acostumar com o git
+//おねがいします
