@@ -8,13 +8,18 @@ public class App {
         Funções_Basicas funcoes_Basicas = new Funções_Basicas();
         Scanner scanner = new Scanner(System.in);
         ArrayList<Estacionamento> lEstacionamento = new ArrayList<Estacionamento>();
+        ListaCircular func = new ListaCircular();
+
+        func.inserirNoComeco("Ricardo Alves Souza");
+        func.inserirNoComeco("Maria Nunes Santos");
+        func.inserirNoFim("Mateus");
 
         int retorno = 1; //Variavel de retorno do Menu Principal
 
         while(retorno == 1){
             retorno = 0;
 
-            funcoes_Basicas.menuPrincipal();
+            funcoes_Basicas.menuPrincipal(func.getPrimeiro().getValor());
             int escolha_MenuPrincipal = scanner.nextInt();
 
             //Switch de ajuda do Menu encaminhando o usuario para a area desejada
@@ -45,12 +50,6 @@ public class App {
                                 retorno_Estacionamento = 1;
                             break;
                             case 2:
-                                for(Estacionamento e: lEstacionamento){
-                                    System.out.println(e);
-                                }
-
-                                scanner.nextLine();
-                                retorno_Estacionamento = 1;
                             break;
                             case 3: 
 
@@ -71,11 +70,16 @@ public class App {
                     }
                 break;
                 case 2:
-                    funcoes_Basicas.menuFuncionarios();
+                func.atualizarReferenciasCirculares();
+                retorno = 1;
                 break;
                 case 3:
                     //Caso de finalização do programa.
                     System.out.println("Obrigado por utilizar o programa!\n\nDesenvolvido por Omar Souza e Guilherme Cristiano");
+                break;
+                case 4:
+
+
                 break;
                 default:
                     //Caso de escapa do programa para informação incorreta inserida.
