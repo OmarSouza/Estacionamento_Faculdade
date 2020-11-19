@@ -15,7 +15,6 @@
             "name": "Debug (Launch)-App<Estacionamento_Faculdade_e3d0a5f0>",
             "request": "launch",
             "mainClass": "App",
-            "console": "externalTerminal",
             "projectName": "Estacionamento_Faculdade_e3d0a5f0"
         }
     ]

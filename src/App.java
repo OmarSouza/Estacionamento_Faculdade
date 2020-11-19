@@ -11,15 +11,16 @@ public class App {
         ListaCircular func = new ListaCircular();
 
         func.inserirNoComeco("Ricardo Alves Souza");
-        func.inserirNoComeco("Maria Nunes Santos");
-        func.inserirNoFim("Mateus");
+        func.inserirNoFim("Maria Nunes Santos");
+        func.inserirNoFim("Mateus Santos de Oliveira");
 
         int retorno = 1; //Variavel de retorno do Menu Principal
 
+        No nofunc = func.getPrimeiro();
         while(retorno == 1){
             retorno = 0;
 
-            funcoes_Basicas.menuPrincipal(func.getPrimeiro().getValor());
+            funcoes_Basicas.menuPrincipal(nofunc.getValor());
             int escolha_MenuPrincipal = scanner.nextInt();
 
             //Switch de ajuda do Menu encaminhando o usuario para a area desejada
@@ -70,7 +71,7 @@ public class App {
                     }
                 break;
                 case 2:
-                func.atualizarReferenciasCirculares();
+                nofunc = nofunc.getProximo();
                 retorno = 1;
                 break;
                 case 3:
