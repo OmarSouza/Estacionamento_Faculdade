@@ -33,7 +33,6 @@ public class App {
 
                                 System.out.println("Vaga Ocupada: ");
                                 int vaga_ocupada = scanner.nextInt();
-                                System.out.println("Insira os dados da Entrada:");
                                 System.out.println("Motorista:");
                                 String motorista = scanner.next();
                                 System.out.println("Placa: ");
@@ -54,11 +53,8 @@ public class App {
                                 retorno_Estacionamento = 1;
                             break;
                             case 3:
-                                System.out.println("Informar placa: ");
-                                String placa_Saida = scanner.next();
-
-                                lEstacionamento.remove();
-                            break;
+                                System.out.println("Liberar vaga:");
+                                lEstacionamento.remove(scanner.nextInt() - 1);
                             case 4:
                                 System.out.println("Retornando ao Menu Principal");
                                 retorno = 1;
@@ -89,5 +85,3 @@ public class App {
         }
     }
 }
-
-//おねがいします
