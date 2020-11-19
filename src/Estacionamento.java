@@ -13,6 +13,6 @@ public class Estacionamento {
 
     @Override
     public String toString(){
-        return "Vaga: " + vaga + " / Placa: " + placa + " / Motorista: " + motorista + " / Entrada: " + hora_Entrada + "\n"; 
+        return "Vaga: " + vaga + " / Placa: " + placa + " / Motorista: " + motorista + " / Entrada: " + hora_Entrada; 
     }
 }

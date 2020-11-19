@@ -31,13 +31,13 @@ public class App {
                         switch(escolha_Estacionamento){
                             case 1:
 
-                                System.out.println("Vaga Ocupada: ");
+                                System.out.print("Vaga Ocupada: ");
                                 int vaga_ocupada = scanner.nextInt();
-                                System.out.println("Motorista:");
+                                System.out.print("Motorista:");
                                 String motorista = scanner.next();
-                                System.out.println("Placa: ");
+                                System.out.print("Placa: ");
                                 String placa_Veiculo = scanner.next();
-                                System.out.println("Entrada:");
+                                System.out.print("Entrada:");
                                 String entrada_Veiculo = scanner.next();
 
                                 lEstacionamento.add(new Estacionamento(vaga_ocupada, placa_Veiculo, motorista, entrada_Veiculo));
@@ -52,14 +52,9 @@ public class App {
                                 scanner.nextLine();
                                 retorno_Estacionamento = 1;
                             break;
-                            case 3:
-                                System.out.println("Informe a Hora de Entrada");
-                                entrada_Veiculo = scanner.next();
-                                System.out.println("Informe a Hora de Saida");
-                                String saida_Veiculo = scanner.next();
-                                System.out.println("Tempo de permanencia: ");
+                            case 3: 
 
-                                System.out.println("Liberar vaga:");
+                                System.out.print("Liberar vaga:");
                                 lEstacionamento.remove(scanner.nextInt() - 1);
                                 retorno_Estacionamento = 1; 
                             case 4:
