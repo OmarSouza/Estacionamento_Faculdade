@@ -53,6 +53,12 @@ public class App {
                                 retorno_Estacionamento = 1;
                             break;
                             case 3:
+                                System.out.println("Informe a Hora de Entrada");
+                                entrada_Veiculo = scanner.next();
+                                System.out.println("Informe a Hora de Saida");
+                                String saida_Veiculo = scanner.next();
+                                System.out.println("Tempo de permanencia: " + funcoes_Basicas.somaHora(entrada_Veiculo, saida_Veiculo));
+
                                 System.out.println("Liberar vaga:");
                                 lEstacionamento.remove(scanner.nextInt() - 1);
                             case 4:

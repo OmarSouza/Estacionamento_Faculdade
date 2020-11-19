@@ -1,7 +1,6 @@
 public class Estacionamento {
     private int vaga;
     private String hora_Entrada;
-    private String hora_Saida;
     private String placa;
     private String motorista;
 
