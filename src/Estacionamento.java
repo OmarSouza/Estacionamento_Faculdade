@@ -16,6 +16,6 @@ public class Estacionamento {
     //Criamos um metodo ToString para customizar a imprensa na instancia da classe.
     @Override
     public String toString(){
-        return "Vaga: " + vaga + " / Placa: " + placa + " / Motorista: " + motorista + " / Entrada: " + hora_Entrada; 
+        return "\nVaga: " + vaga + " / Placa: " + placa + " / Motorista: " + motorista + " / Entrada: " + hora_Entrada; 
     }
 }
