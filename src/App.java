@@ -51,8 +51,16 @@ public class App {
                                 retorno_Estacionamento = 1;
                             break;
                             case 2:
+                                for(Estacionamento e : lEstacionamento){
+                                    System.out.println(e);
+                                }
+                                retorno_Estacionamento = 1;
                             break;
                             case 3: 
+                                System.out.println("Informe o tempo de permanencia do veiculo: (em minutos");
+                                int tempo_permanencia = scanner.nextInt();
+                                double preco_Final = (tempo_permanencia / 60) * 15.00;
+                                System.out.println("Valor a ser cobrado: " + preco_Final);
 
                                 System.out.print("Liberar vaga:");
                                 lEstacionamento.remove(scanner.nextInt() - 1);

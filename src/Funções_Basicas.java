@@ -1,7 +1,3 @@
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Funções_Basicas {
     public void menuPrincipal(String func) {
         System.out.println("Funcionário no cargo: " + func + "\n\n");
